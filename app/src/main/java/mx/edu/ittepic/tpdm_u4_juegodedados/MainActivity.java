@@ -1,13 +1,11 @@
 package mx.edu.ittepic.tpdm_u4_juegodedados;
 
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText rondas, turnos, t1j1,t2j1,t3j1,t4j1,totalj1,
@@ -20,7 +18,6 @@ ImageView dado1, dado2;
 Tirada tirada;
 
 int ronda, turno;
-boolean nexTurn;
 
 
     @Override
@@ -55,7 +52,6 @@ boolean nexTurn;
 
         ronda = 1;
         turno = 1;
-        nexTurn = false;
 
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
